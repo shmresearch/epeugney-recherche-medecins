@@ -90,11 +90,87 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    color: #000000;
+    font: 100%/1.4 "Georgia", "times new roman", times, serif;
+}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
+h1, h2, aside span {
+    font-family: "Helvetica";
+}
 
+h1 {
+    font-size: 3em;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 0.2em;
+    font-weight: 100;
+    color: #569E00;
+}
 
+h2 {
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: normal;
+    line-height: 1.1;
+    padding-bottom: 0.4em;
+    font-weight: 100;
+    color: #569E00;
+}
 
+#container {
+    margin: 0 auto;
+    max-width: 70em;
+    overflow: hidden;
+    padding: 0 1em;
+}
+
+#stats > div {
+    margin:0 0 3em;
+}
+
+.stats-green-number {
+    font-size: 5.5em;
+    color: #569E00;
+    font-weight: 100;
+    line-height: 0;
+    padding: 0.5em 0 0;
+    display: block;
+    letter-spacing: -0.05em;
+}
+
+.stats-grey-text {
+    font-size: 3em;
+    color: #999;
+    font-weight: 100;
+    line-height: 0;
+    padding: 0.7em 0 0;
+    display: block;
+}
+
+.stats-small-grey-text {
+    font-size: 1em;
+    color: #999;
+    font-weight: 100;
+    line-height: 0;
+    padding: 0.4em 0 0;
+    display: block;
+}
+
+ul.round-bullet {
+    list-style-type: disc;
+    padding: 0 1em;
+}
+
+ul.check-bullet {
+    list-style-image: disc;
+    padding: 0 1em;
+}
 
 
 
