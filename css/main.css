@@ -95,8 +95,8 @@ textarea {
 }
 
 body {
-    color: #000000;
-    font: 100%/1.4 "Georgia", "times new roman", times, serif;
+    color: #3D3D3D;
+    font: 100%/1.5 "ff-tisa-web-pro", "Georgia", "times new roman", times, serif;
 }
 
 ul {
@@ -137,6 +137,13 @@ section {
     padding: 0 1em;
 }
 
+.firstletter {
+    font-size: 4em;
+    float: left;
+    margin: 0 0.2em 0 0;
+    line-height: 1em;
+}
+
 #stats {
     background-color: #F9F9F9;
     padding: 2em;
@@ -157,13 +164,13 @@ section {
 }
 
 .stats-grey-text {
-    font-size: 3em;
+    font-size: 2.5em;
     color: #999;
     font-weight: 100;
-    line-height: 0;
-    padding: 0.7em 0 0;
+    line-height: 0.8;
+    padding: 0.5em 0 0;
     display: block;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.02em;
 
 }
 
@@ -225,8 +232,17 @@ ul.check-bullet-ul > li {
     font-weight: 100;
 }
 
-#img-enfants {
-    margin-left: -15%;
+#activites-sportives > div {
+    margin-top: 3em;
+}
+
+#img-mountains {
+    margin: 1em 0 0 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -322,6 +338,10 @@ ul.check-bullet-ul > li {
     section { display: inline-block; } /* For IE6/7 */
     section { display: block; } /* For IE6/7 */
 
+    #motdumaire > p:nth-child(3){
+        padding-left: 2em;
+    }
+
     #chiffres > div {
         overflow: hidden;
     }
@@ -341,6 +361,11 @@ ul.check-bullet-ul > li {
 
     .clearleft {
         clear: left;
+    }
+
+    #stats {
+        margin-right: 3em;
+        padding: 4em;
     }
 
     #img-services {
@@ -367,8 +392,10 @@ ul.check-bullet-ul > li {
     }
 
     #img-mountains {
-        width: 50%;
+        padding-right: 2em;
     }
+
+    
 }
 
 @media print,
