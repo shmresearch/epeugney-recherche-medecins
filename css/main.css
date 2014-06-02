@@ -90,6 +90,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* {
+    box-sizing: border-box;
+}
+
 body {
     color: #000000;
     font: 100%/1.4 "Georgia", "times new roman", times, serif;
@@ -102,32 +106,40 @@ ul {
 }
 
 h1, h2, aside span {
-    font-family: "Helvetica";
+    font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     letter-spacing: -0.02em;
     line-height: 1;
     margin-bottom: 0.2em;
     font-weight: 100;
-    color: #569E00;
-}
+    color: #39b54a;
+} 
 
 h2 {
     border-bottom: 1px solid #CCCCCC;
-    font-weight: normal;
+    font-size: 3em;
     line-height: 1.1;
     padding-bottom: 0.4em;
     font-weight: 100;
-    color: #569E00;
+    color: #39b54a;
+}
+
+section {
+    margin-top: 5em;
 }
 
 #container {
     margin: 0 auto;
     max-width: 70em;
-    overflow: hidden;
     padding: 0 1em;
+}
+
+#stats {
+    background-color: #F9F9F9;
+    padding: 2em;
 }
 
 #stats > div {
@@ -136,7 +148,7 @@ h2 {
 
 .stats-green-number {
     font-size: 5.5em;
-    color: #569E00;
+    color: #33b35a;
     font-weight: 100;
     line-height: 0;
     padding: 0.5em 0 0;
@@ -164,24 +176,58 @@ h2 {
     display: block;
 }
 
+
+ul > li {
+    margin-top: 1em;
+}
+
 ul.round-bullet {
     list-style: disc inside;
 }
 
-ul.check-bullet {
-    list-style-image: disc;
-    padding: 0 1em;
+ul.check-bullet-ul > li {
+    background:url(../img/checkmark.png) no-repeat left top;
+    padding-left: 2em;
 }
 
+.check-bullet {
+    background:url(../img/checkmark.png) no-repeat left top;
+    padding-left: 2em;
+}
 
+#a-venir {
+    background-color: rgba(57, 181, 74, 0.9);
+    color:#fff;
+    font-family: "Helvetica", "Arial";
+    padding: 1.2em;
+    font-weight: 100;
+    max-width: 22em;
+    margin-top: 2em;
+}
 
+#a-venir ul {
+    position: relative;
+    margin-left: 1em;
+}
 
+#a-venir li:before {
+    content: "• ";
+    color: #fff;
+    position: absolute;
+    left: -1em;
+    margin-right: 5px;
+}
 
+#a-venir h3 {
+    font-size:  2em;
+    line-height: 1em;
+    margin:0 0 0.6em;
+    font-weight: 100;
+}
 
-
-
-
-
+#img-enfants {
+    margin-left: -15%;
+}
 
 
 /* ==========================================================================
@@ -265,6 +311,64 @@ ul.check-bullet {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    h1 {
+        font-size: 6em;
+    }
+
+    h2 {
+        font-size: 4em;
+    }
+
+    section { display: inline-block; } /* For IE6/7 */
+    section { display: block; } /* For IE6/7 */
+
+    #chiffres > div {
+        overflow: hidden;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+        margin-left: 2em;
+    }
+
+    .two-col {
+        width: 50%;
+    }
+
+    .clearleft {
+        clear: left;
+    }
+
+    #img-services {
+        margin-left: -15em;
+    }
+
+    #img-services-sante {
+        margin-right: -7em;
+        position: relative;
+    }
+
+    #a-venir {
+        position: absolute;
+        top: 20em;
+        left: -5em;
+    }
+
+    #systeme-educatif > div {
+        margin-top: 2em;
+    }
+
+    #img-golf {
+        margin-left: 5em;
+    }
+
+    #img-mountains {
+        width: 50%;
+    }
 }
 
 @media print,
