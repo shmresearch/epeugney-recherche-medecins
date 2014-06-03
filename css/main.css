@@ -105,7 +105,7 @@ ul {
     padding: 0;
 }
 
-h1, h2, aside span {
+h1, h2, #stats span, .helvetica {
     font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
 }
 
@@ -115,7 +115,7 @@ h1 {
     line-height: 1;
     margin-bottom: 0.2em;
     font-weight: 100;
-    color: #39b54a;
+    color: #fff;
 } 
 
 h2 {
@@ -131,10 +131,30 @@ section {
     margin-top: 5em;
 }
 
-#container {
+section {
     margin: 0 auto;
-    max-width: 70em;
+    max-width: 74em;
     padding: 0 1em;
+}
+
+header {
+    background: url("../img/header.jpg") no-repeat;
+    background-size: cover;
+}
+
+#recherche-medecins {
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+}
+
+#menu a {
+    color: #fff;
+    font-size: 1.3em;
+    text-decoration: none;
+
 }
 
 .firstletter {
@@ -200,36 +220,6 @@ ul.check-bullet-ul > li {
 .check-bullet {
     background:url(../img/checkmark.png) no-repeat left top;
     padding-left: 2em;
-}
-
-#a-venir {
-    background-color: rgba(57, 181, 74, 0.9);
-    color:#fff;
-    font-family: "Helvetica", "Arial";
-    padding: 1.2em;
-    font-weight: 100;
-    max-width: 22em;
-    margin-top: 2em;
-}
-
-#a-venir ul {
-    position: relative;
-    margin-left: 1em;
-}
-
-#a-venir li:before {
-    content: "• ";
-    color: #fff;
-    position: absolute;
-    left: -1em;
-    margin-right: 5px;
-}
-
-#a-venir h3 {
-    font-size:  2em;
-    line-height: 1em;
-    margin:0 0 0.6em;
-    font-weight: 100;
 }
 
 #activites-sportives > div {
@@ -338,12 +328,8 @@ img {
     section { display: inline-block; } /* For IE6/7 */
     section { display: block; } /* For IE6/7 */
 
-    #motdumaire > p:nth-child(3){
-        padding-left: 2em;
-    }
-
-    #chiffres > div {
-        overflow: hidden;
+    section {
+        padding: 0 3em;
     }
 
     .left {
@@ -363,6 +349,29 @@ img {
         clear: left;
     }
 
+    header {
+        height: 600px;
+    }
+
+    #menu ul li {
+        float: left;
+        margin-right: 2em;
+    }
+
+    #motdumaire {
+        margin-top: -10em;
+        background-color: #fff;
+        padding-top: 3em;
+    }
+
+    #motdumaire p:nth-child(2){
+        padding-left: 2em;
+    }
+
+    #chiffres > div {
+        overflow: hidden;
+    }
+
     #stats {
         margin-right: 3em;
         padding: 4em;
@@ -375,12 +384,6 @@ img {
     #img-services-sante {
         margin-right: -7em;
         position: relative;
-    }
-
-    #a-venir {
-        position: absolute;
-        top: 20em;
-        left: -5em;
     }
 
     #systeme-educatif > div {
