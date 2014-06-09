@@ -97,6 +97,7 @@ textarea {
 body {
     color: #3D3D3D;
     font: 100%/1.5 "ff-tisa-web-pro", "Georgia", "times new roman", times, serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 ul {
@@ -105,13 +106,13 @@ ul {
     padding: 0;
 }
 
-h1, h2, #stats span, .helvetica {
-    font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
+h1, h2, #stats span {
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, "Arial", sans-serif;
+    letter-spacing: -0.04em;
 }
 
 h1 {
     font-size: 4em;
-    letter-spacing: -0.02em;
     line-height: 1;
     margin-bottom: 0.2em;
     font-weight: 100;
@@ -142,19 +143,35 @@ header {
     background-size: cover;
 }
 
-#recherche-medecins {
-    padding: 0;
+img {
+    width: 100%;
 }
 
+.left {
+    float: left;
+}
 #container {
     width: 100%;
 }
 
 #menu a {
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-decoration: none;
+}
 
+#menu a:hover {
+    text-decoration: underline;
+}
+
+#menu ul {
+    color: #fff;
+}
+
+.quote {
+    font-size: 1.3em;
+    color: #999;
+    margin: 2em 0;
 }
 
 .firstletter {
@@ -164,9 +181,14 @@ header {
     line-height: 1em;
 }
 
+.greybg {
+    background-color: #F7F7F7;
+    margin: 2em 0;
+    padding: 0 0 4em 0;
+}
+
 #stats {
-    background-color: #F9F9F9;
-    padding: 2em;
+    padding-left: 2em;
 }
 
 #stats > div {
@@ -209,32 +231,70 @@ ul > li {
 }
 
 ul.round-bullet {
-    list-style: disc inside;
+    list-style: url("../img/grey-bullet.png") inside;
 }
 
 ul.check-bullet-ul > li {
-    background:url(../img/checkmark.png) no-repeat left top;
+    background:url("../img/checkmark.png") no-repeat left top;
     padding-left: 2em;
 }
 
 .check-bullet {
-    background:url(../img/checkmark.png) no-repeat left top;
+    background:url("../img/checkmark.png") no-repeat left top;
     padding-left: 2em;
 }
 
-#activites-sportives > div {
-    margin-top: 3em;
+#activites-sportives div {
+    margin-bottom: 2em;
+}
+
+#img-enfants {
+    margin-bottom: 1em;
 }
 
 #img-mountains {
     margin: 1em 0 0 0;
 }
 
-img {
+#pour-enfants img {
     width: 100%;
-    height: auto;
 }
 
+#contact li {
+    margin: 0 0 2em 0;
+}
+
+.contact-detail {
+    margin: 0 0 0 1em;
+}
+
+#gmap iframe{
+    height: 300px;
+}
+
+.green-box {
+    padding: 1em;
+    background-color: rgba(108, 190, 69, 0.9);
+    font: 3em/0.8 "proxima-nova", "Helvetica Neue", Helvetica, "Arial", sans-serif;
+    color: #fff;
+    width: 10em;
+    position: absolute;
+    margin: -1em 0 0 -1em;
+    line-height: 1em;
+}
+
+.green-box p {
+    margin: 0;
+}
+
+#img-locaux {
+    margin-top: 5em;
+}
+
+#contact-list {
+    padding: 2em;
+    background-color: #F7F7F7; 
+}
 
 /* ==========================================================================
    Helper classes
@@ -315,7 +375,7 @@ img {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 45em) {
     /* Style adjustments for viewports that meet the condition */
     h1 {
         font-size: 6em;
@@ -330,19 +390,16 @@ img {
 
     section {
         padding: 0 3em;
+        position: relative;
     }
 
-    .left {
-        float: left;
-    }
-
-    .right {
-        float: right;
-        margin-left: 2em;
-    }
+   /* img {
+        width: auto;
+    }*/
 
     .two-col {
         width: 50%;
+        padding: 0 1em;
     }
 
     .clearleft {
@@ -350,55 +407,80 @@ img {
     }
 
     header {
-        height: 600px;
+        height: 27em;
     }
 
     #menu ul li {
         float: left;
         margin-right: 2em;
+        list-style-type: disc;
     }
 
     #motdumaire {
-        margin-top: -10em;
+        margin-top: -6em;
         background-color: #fff;
-        padding-top: 3em;
+        padding-top: 2em;
     }
 
     #motdumaire p:nth-child(2){
         padding-left: 2em;
     }
 
-    #chiffres > div {
-        overflow: hidden;
+    #chiffres-content {
+        width: 70%;
+        padding-left: 2em;
     }
 
     #stats {
         margin-right: 3em;
-        padding: 4em;
+    }
+
+    #img-map {
+        margin: 0 0 0 -3em;
+    }
+
+    #img-map img{
+        width: 100%;
+        border: 1px solid #eee;
+    }
+
+    #img-locaux {
+        margin: 2em 0 0 6em;
+        width: 50%
     }
 
     #img-services {
-        margin-left: -15em;
+        margin-left: -5em;
+        padding-right: 2em;
+        width: 50%;
     }
 
     #img-services-sante {
-        margin-right: -7em;
-        position: relative;
+        right: 0em;
+        position: absolute;
+        width: 50%;
     }
 
     #systeme-educatif > div {
         margin-top: 2em;
     }
 
+    #img-culture img {
+        width: 100%;
+    }
+
     #img-golf {
+        width: 65%;
         margin-left: 5em;
     }
 
-    #img-mountains {
-        padding-right: 2em;
+    #img-mountains img{
+        width: 100%;
     }
 
-    
+    #gmap iframe{
+        height: 500px;
+    }
 }
 
 @media print,

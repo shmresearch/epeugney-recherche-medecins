@@ -24,12 +24,12 @@
         <!-- Add your site or application content here -->
         <div id="container">
             <header class="clearfix">
-                <section>
-                    <div class="left">
+                <section id="menu">
+                    <div>
                         <h1>Épeugney</h1>
                     </div>
 
-                    <div id="menu" class="left">
+                    <div>
                         <ul><!-- 
                             <li><a href="#motdumaire">Mot du Maire</a></li> -->
                             <li><a href="#chiffres">Quelques chiffres</a></li>
@@ -61,9 +61,10 @@
                 En espérant que ces quelques lignes vous motiveront à venir exercer votre activité professionnelle à Épeugney.
                 Bien cordialement,</p>
             </section>
-            <section id="chiffres" class="clearfix">
+            <div id="chiffres" class="greybg clearfix">
+                <section>
                 <h2>quelques chiffres</h2>
-                <p>ÉPEUGNEY en tant que Bourg Centre et grâce à son important trafic routier offre un accès à une population d’environ 16’700 habitants.</p>
+                <p class="quote">ÉPEUGNEY en tant que Bourg Centre et grâce à son important trafic routier offre un accès à une population d’environ 16’700 habitants.</p>
                 <aside id="stats" class="left">
                     <div>
                         <p>
@@ -86,7 +87,7 @@
                         </p>
                     </div>
                 </aside>
-                <div>
+                <div id="chiffres-content" class="left">
                     <p><strong>Épeugney est situé dans le Doubs (25) sur  l’axe routier entre Besançon (capitale de la Franche Comté) et la Suisse.</strong></p>
                     <ul class="round-bullet">
                         <li>Besançon - Ville Universitaire (17 Km, < 15 min)</li>
@@ -113,44 +114,51 @@
                         <li>Canton de Levier 4’166 habitants</li>
                     </ul>
                 </div>
-                
-            </section>
+                </section>
+            </div>
 
             <section id="geo" class="clearfix">
                 <h2>situation géographique</h2>
-                <div>
+                <div id="img-map" class="left two-col"><img src="img/map.jpg"></div>
+                <div class="left two-col">
                     <p><strong>Venir à Épeugney</strong></p>
                     <ul class="round-bullet">
                         <li>Gare TGV de Besançon Viotte (20 Km, 15 min)</li>
                         <li>Gare TGV de Besançon Franche Comté (32 Km; Auxon-Dessus)</li>
                         <li>Autoroute A36 (25 km)</li>
                         <li>Aéroport de GENEVE (160 Km; 1h45)</li>
-                        <li>Aéroport de Bâle-Mulhouse/ EuroAirport Basel Mulhouse</li>
-                        <li>Freiburg (180 Km, 1h 45 min)</li>
+                        <li>Aéroport de Bâle-Mulhouse/ EuroAirport Basel Mulhouse Freiburg (180 Km, 1h 45 min)</li>
                         <li>Aéroport de Lyon Saint-Exupéry (220 Km, 1h 45 min)</li>
                     </ul>
                 </div>
             </section>
 
-            <section id="locaux" class="clearfix">
-                <h2>vos locaux</h2>
-                <div>
-                    <p><strong>Services de Santé</strong></p>
-                    <ul class="check-bullet-ul">
-                        <li>Pharmacie (5 pharmaciens)</li>
-                        <li>Cabinet dentaire (2 dentistes)</li>
-                        <li>Cabinet d’infirmières (2 infirmières)</li>
-                        <li>Kinésithérapeute (1)</li>
-                        <li>Psychologue (1)</li>
-                        <li>Orthophoniste (1)</li>
-                    </ul>
-                </div>
-            </section>
+            <div id="locaux" class="greybg clearfix">
+                <section>
+                    <h2>vos locaux</h2>
+                    <div class="left">
+                        <ul class="check-bullet-ul">
+                            <li>128 m2</li>
+                            <li>4 salles de consultation</li>
+                            <li>1 grande salle d’attente avec un coin accueil</li>
+                            <li>1 salle de détente pour les médecins (cuisine)</li>
+                            <li>1 WC, 1 salle de bain.</li>
+                            <li>1 grand parking</li>
+                        </ul>
+                    </div>
+                    <div id="img-locaux" class="left">
+                        <div class="green-box">
+                            <p>Locaux <strong>gratuits</strong> <br>pendant <strong>X ans</strong></p>
+                        </div>
+                        <img src="img/locaux.jpg">
+                    </div>
+                </section>
+            </div>
 
             <section id="services-epeugney" class="clearfix">
                 <h2>les services à Épeugney</h2>
                 <div id="img-services" class="left"><img src="img/services.jpg"></div>
-                <div class="left">
+                <div class="left two-col">
                     <p><strong>Services de Santé</strong></p>
                     <ul class="check-bullet-ul">
                         <li>Pharmacie (5 pharmaciens)</li>
@@ -161,7 +169,7 @@
                         <li>Psychologue (1)</li>
                     </ul>
                 </div>
-                <div class="left">
+                <div class="left two-col">
                     <p><strong>Autres services</strong></p>
                     <ul class="check-bullet-ul">
                         <li>Agence Postale Communale</li>
@@ -178,42 +186,43 @@
                 </div>
             </section>
 
-            <section id="services-sante" class="clearfix">
-                <h2>les services de santé à proximité</h2>
-                <div class="left">
-                     <ul class="check-bullet-ul">
-                        <li><strong>Hôpitaux/Maternités et Cliniques</strong>
-                            <ul class="round-bullet">
-                                <li>CHRU de Besançon (20 Km)</li>
-                                <li>Polyclinique de Franche-Comté (18 Km)</li>
-                                <li>Capio Clinique Saint-Vincent (20 Km)</li>
-                            </ul>
-                        </li>
-                        <li><strong>Cabinets de radiologie, d’imagerie médicale et de cardiologie</strong>
-                            <ul class="round-bullet">
-                                <li>Ornans (13 km)</li>
-                                <li>Besançon (20 Km)</li>
-                            </ul>
-                        </li>
-                        <li><strong>Laboratoires d’analyses médicales</strong>
-                            <ul class="round-bullet">
-                                <li>Ornans (13 km)</li>
-                                <li>Besançon (20 Km)</li>
-                                <li>Saône (13 km)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div id="img-services-sante" class="right">
-                    <img src="img/services-sante.jpg">
-                </div>
-                
-            </section>
+            <div id="services-sante" class="clearfix greybg">
+                <section>
+                    <h2>les services de santé à proximité</h2>
+                    <div class="left two-col">
+                         <ul class="check-bullet-ul">
+                            <li><strong>Hôpitaux/Maternités et Cliniques</strong>
+                                <ul class="round-bullet">
+                                    <li>CHRU de Besançon (20 Km)</li>
+                                    <li>Polyclinique de Franche-Comté (18 Km)</li>
+                                    <li>Capio Clinique Saint-Vincent (20 Km)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Cabinets de radiologie, d’imagerie médicale et de cardiologie</strong>
+                                <ul class="round-bullet">
+                                    <li>Ornans (13 km)</li>
+                                    <li>Besançon (20 Km)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Laboratoires d’analyses médicales</strong>
+                                <ul class="round-bullet">
+                                    <li>Ornans (13 km)</li>
+                                    <li>Besançon (20 Km)</li>
+                                    <li>Saône (13 km)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="img-services-sante">
+                        <img src="img/services-sante.jpg">
+                    </div>
+                </section>
+            </div>
 
             <section id="systeme-educatif" class="clearfix">
                 <h2>système éducatif</h2>
-                <div id="img-education" class="left"><img src="img/education.jpg"></div>
-                <div class="left">
+                <div id="img-education" class="left two-col"><img src="img/education.jpg"></div>
+                <div class="left two-col">
                     <p><strong>À Épeugney</strong></p>
                     <ul class="check-bullet-ul">
                         <li>École intercommunale (maternelle et primaire) + CLHS</li>
@@ -268,49 +277,54 @@
                 </div>
             </section>
 
-             <section id="pour-enfants" class="clearfix">
-                <h2>pour les enfants</h2>
-                <div id="img-enfants"><img src="img/enfants.jpg"></div>
-                <div class="left two-col">
-                    <ul class="check-bullet-ul">
-                        <li><strong>Écoles de musique</strong>
-                            <ul class="round-bullet">
-                                <li>Fertans (10 km, < 10 min)</li>
-                                <li>Quingey (20 km; 15 min)</li>
-                                <li>Besançon (Conservatoire de musique)</li>
-                            </ul>
-                        </li>
-                        <li><strong>Équitation</strong>
-                            <ul class="round-bullet">
-                                <li>Montrond-le-Château (4 km, < 5 min)</li>
-                            </ul>
-                        </li>
-                        <li><strong>Cyclisme</strong>
-                            <ul class="round-bullet">
-                                <li>Vélo-Club Ornans</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="left two-col">
-                    <ul class="check-bullet-ul">
-                        <li><strong>Clubs de football</strong>
-                            <ul class="round-bullet">
-                                <li>4 clubs de football à proximité  (6 Km, 5 min)</li>
-                            </ul>
-                        </li>
-                        <li><strong>Judo</strong>
-                            <ul class="round-bullet">
-                                <li>Mérey-sous-Montrond (6 Km, 5 min)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+             <div id="pour-enfants" class="clearfix greybg">
+                <section>
+                    <h2>pour les enfants</h2>
+                    <div id="img-enfants"><img src="img/enfants.jpg"></div>
+                    <div class="left two-col">
+                        <ul class="check-bullet-ul">
+                            <li><strong>Écoles de musique</strong>
+                                <ul class="round-bullet">
+                                    <li>Fertans (10 km, < 10 min)</li>
+                                    <li>Quingey (20 km; 15 min)</li>
+                                    <li>Besançon (Conservatoire de musique)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Équitation</strong>
+                                <ul class="round-bullet">
+                                    <li>Montrond-le-Château (4 km, < 5 min)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Cyclisme</strong>
+                                <ul class="round-bullet">
+                                    <li>Vélo-Club Ornans</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left two-col">
+                        <ul class="check-bullet-ul">
+                            <li><strong>Clubs de football</strong>
+                                <ul class="round-bullet">
+                                    <li>4 clubs de football à proximité  (6 Km, 5 min)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Judo</strong>
+                                <ul class="round-bullet">
+                                    <li>Mérey-sous-Montrond (6 Km, 5 min)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
 
             <section id="activites-culturelles" class="clearfix">
                 <h2>activités culturelles</h2>
-                <div class="left">
+                <div id="img-culture" class="left two-col"> 
+                    <img src="img/culture.jpg">
+                </div>
+                <div class="left two-col">
                      <p><strong>Besançon</strong> (20 Km, 15 min)</p>
                      <ul class="check-bullet-ul">
                         <li>Cinémas</li>
@@ -329,143 +343,178 @@
                         <li>Saline d’Arc et Senans (site classé au patrimoine mondial de l’Unesco)</li>
                     </ul>
                 </div>
-                <div id="img-culture" class="right"><img src="img/culture.jpg"></div>
-            </section>
-
-            <section id="activites-sportives" class="clearfix">
-                <h2>activités sportives</h2>
-                <div class="clearfix">
-                    <div class="left">
-                         <p><strong>À Épeugney</strong></p>
-                         <ul class="check-bullet-ul">
-                            <li>Tennis</li>
-                            <li>VTT</li>
-                            <li>Danse Country</li>
-                            <li>Chasse</li>
-                            <li>Randonnées pédestres</li>
-                        </ul>
-                    </div>
-
-                    <div id="img-golf" class="left"><img src="img/golf.jpg"></div>
-                </div>
                 
-                <div class="clearfix">
-                    <p><strong>À proximité</strong></p>
-                    <div class="left two-col clearleft">
-                        <ul class="check-bullet-ul">
-                            <li>Pêche à la Mouche (La Loue est classée comme l’une des plus belles rivière d’Europe pour la pêche à la mouche)
-                                <ul class="round-bullet">
-                                    <li>Vallée de la loue (5km, < 5 min)</li>
-                                    <li>Lodge de la Piquette (7 Km, 5 min)</li>
-                                    <li>Chenecey-Buillon (8 Km, 10 min)</li>
-                                    <li>Cléron (6 km, 5 min)</li>
-                                    <li>Ornans (13 km, 10 min)</li>
-                                </ul>
-                            </li>
-                            <li>Canoë-Kayak 
-                                <ul class="round-bullet">
-                                    <li>Vallée de la Loue (5km, < 5 min)</li>
-                                </ul>
-                            </li>
-                            <li>Équitation
-                                <ul class="round-bullet">
-                                    <li>Élevage du Gue (Ferme de la Guénardière; 4 Km)</li>
-                                </ul>
-                            </li>
-                            <li>Cyclisme
-                            <ul class="round-bullet">
-                                <li>Vélo-Club Ornans (VCO)</li>
-                            </ul>
-                        </li>
-                        </ul>
-                    </div>
-                    <div class="left two-col">
-                        <ul class="check-bullet-ul">
-                            <li>Escalade
-                                <ul class="round-bullet">
-                                    <li>Ornans - Via Ferrata</li>
-                                </ul>
-                            </li>
-                            <li>Piscines / Patinoires
-                                <ul class="round-bullet">
-                                    <li>Besançon (LaFayette ; Mallarmé ; 19 km, 15 min)</li>
-                                    <li>Ornans (Nautiloue; 13 km, 10 min)</li>
-                                </ul>
-                            </li>
-                            <li>Golf
-                                <ul class="round-bullet">
-                                    <li>Golf de Besançon (La Chevillotte; 20Km, 15 min)</li>
-                                    <li>Golf du château de Bournel (65 Km, 45 min)</li>
-                                    <li>Golf du Val de Sorne (90 Km, 1h)</li>
-                                    <li>Golf de Prunevelle (100 Km, 1h)</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="clearfix">
-                    <div id="img-mountains" class="left two-col clearleft"><img src="img/moutains.jpg"></div>
-                    <div class="left two-col">
-                        <ul class="check-bullet-ul">
-                            <li>Ski Nordique
-                                <ul class="round-bullet">
-                                    <li>1’000 Km de pistes de ski de fond tracées dans le département du Doubs</li>
-                                    <li>Frasne (40 km, 30 min)</li>
-                                    <li>Pontarlier - Secteur du Larmont (50 km, 40 min)</li>
-                                    <li>Les Fourgs (60 Km, 50 min)</li>
-
-                                </ul>
-                            </li>
-                            <li>Ski Alpin
-                                <ul class="round-bullet">
-                                    <li>Métabief (massif du jura, 65 Km, < 1h)</li>
-                                    <li>Les Rousses (massif du Jura, 105 Km, 1h 30 min)</li>
-                                    <li>Domaines des portes du soleil (massif des Alpes françaises 180 Km, 2h)</li>
-                                    <li>Verbier (massif des Alpes suisses, 4 Vallées,  200 Km, 2h 30 min)</li>
-                                </ul>
-                            </li>
-                            <li>Sports nautiques
-                                <ul class="round-bullet">
-                                    <li>Lac Saint-Point (60 km, 45 min)</li>
-                                    <li>Val de Bonnal (80 km, 50 min)</li>
-                                    <li>Lac Léman (115 Km, 1h 15 min)\</li>
-                                    <li>Lac de Vouglans (110 Km, 1h)</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </section>
+
+            <div id="activites-sportives" class="clearfix greybg">
+                <section>
+                    <h2>activités sportives</h2>
+                    <div class="clearfix">
+                        <div class="left">
+                             <p><strong>À Épeugney</strong></p>
+                             <ul class="check-bullet-ul">
+                                <li>Tennis</li>
+                                <li>VTT</li>
+                                <li>Danse Country</li>
+                                <li>Chasse</li>
+                                <li>Randonnées pédestres</li>
+                            </ul>
+                        </div>
+
+                        <div id="img-golf" class="left"><img src="img/golf.jpg"></div>
+                    </div>
+                    
+                    <div class="clearfix">
+                        <p><strong>À proximité</strong></p>
+                        <div class="left two-col clearleft">
+                            <ul class="check-bullet-ul">
+                                <li>Pêche à la Mouche (La Loue est classée comme l’une des plus belles rivière d’Europe pour la pêche à la mouche)
+                                    <ul class="round-bullet">
+                                        <li>Vallée de la loue (5km, < 5 min)</li>
+                                        <li>Lodge de la Piquette (7 Km, 5 min)</li>
+                                        <li>Chenecey-Buillon (8 Km, 10 min)</li>
+                                        <li>Cléron (6 km, 5 min)</li>
+                                        <li>Ornans (13 km, 10 min)</li>
+                                    </ul>
+                                </li>
+                                <li>Canoë-Kayak 
+                                    <ul class="round-bullet">
+                                        <li>Vallée de la Loue (5km, < 5 min)</li>
+                                    </ul>
+                                </li>
+                                <li>Équitation
+                                    <ul class="round-bullet">
+                                        <li>Élevage du Gue (Ferme de la Guénardière; 4 Km)</li>
+                                    </ul>
+                                </li>
+                                <li>Cyclisme
+                                <ul class="round-bullet">
+                                    <li>Vélo-Club Ornans (VCO)</li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </div>
+                        <div class="left two-col">
+                            <ul class="check-bullet-ul">
+                                <li>Escalade
+                                    <ul class="round-bullet">
+                                        <li>Ornans - Via Ferrata</li>
+                                    </ul>
+                                </li>
+                                <li>Piscines / Patinoires
+                                    <ul class="round-bullet">
+                                        <li>Besançon (LaFayette ; Mallarmé ; 19 km, 15 min)</li>
+                                        <li>Ornans (Nautiloue; 13 km, 10 min)</li>
+                                    </ul>
+                                </li>
+                                <li>Golf
+                                    <ul class="round-bullet">
+                                        <li>Golf de Besançon (La Chevillotte; 20Km, 15 min)</li>
+                                        <li>Golf du château de Bournel (65 Km, 45 min)</li>
+                                        <li>Golf du Val de Sorne (90 Km, 1h)</li>
+                                        <li>Golf de Prunevelle (100 Km, 1h)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div id="img-mountains" class="left two-col clearleft"><img src="img/moutains.jpg"></div>
+                        <div class="left two-col">
+                            <ul class="check-bullet-ul">
+                                <li>Ski Nordique
+                                    <ul class="round-bullet">
+                                        <li>1’000 Km de pistes de ski de fond tracées dans le département du Doubs</li>
+                                        <li>Frasne (40 km, 30 min)</li>
+                                        <li>Pontarlier - Secteur du Larmont (50 km, 40 min)</li>
+                                        <li>Les Fourgs (60 Km, 50 min)</li>
+
+                                    </ul>
+                                </li>
+                                <li>Ski Alpin
+                                    <ul class="round-bullet">
+                                        <li>Métabief (massif du jura, 65 Km, < 1h)</li>
+                                        <li>Les Rousses (massif du Jura, 105 Km, 1h 30 min)</li>
+                                        <li>Domaines des portes du soleil (massif des Alpes françaises 180 Km, 2h)</li>
+                                        <li>Verbier (massif des Alpes suisses, 4 Vallées,  200 Km, 2h 30 min)</li>
+                                    </ul>
+                                </li>
+                                <li>Sports nautiques
+                                    <ul class="round-bullet">
+                                        <li>Lac Saint-Point (60 km, 45 min)</li>
+                                        <li>Val de Bonnal (80 km, 50 min)</li>
+                                        <li>Lac Léman (115 Km, 1h 15 min)\</li>
+                                        <li>Lac de Vouglans (110 Km, 1h)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
             <section id="contact" class="clearfix">
                 <h2>contactez-nous</h2>
-                <div id="wufoo-zyzejks0hhujhd">
-                Fill out my <a href="https://jcbshm.wufoo.com/forms/zyzejks0hhujhd">online form</a>.
+                <div id="contact-box">
+                    <div id="wufoo-zyzejks0hhujhd" class="two-col left">
+                        Fill out my <a href="https://jcbshm.wufoo.com/forms/zyzejks0hhujhd">online form</a>.
+                    </div>
+                    <div id="contact-list" class="two-col left">   
+                        <ul>
+                            <li class="clearfix">
+                                <div class="left"><img src="img/icon-tel.png"></div>
+                                <div class="left contact-detail">
+                                    Mr le Maire : <strong>07 89 03 99 53</strong><br>
+                                    Secrétariat : <strong>03 81 60 35 03</strong>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="left"> 
+                                    <img src="img/icon-email.png">
+                                </div>
+                                <div class="left contact-detail">
+                                    Par e-mail à <strong>mairie.epeugney@orange.fr</strong>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="left">
+                                    <img src="img/icon-location.png">
+                                </div>
+                                <div class="left contact-detail">
+                                    Sur place au<br>
+                                    <strong>12 rue de l’Église
+                                    25290 ÉPEUGNEY</strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <script type="text/javascript">var zyzejks0hhujhd;(function(d, t) {
-                var s = d.createElement(t), options = {
-                'userName':'jcbshm',
-                'formHash':'zyzejks0hhujhd',
-                'autoResize':true,
-                'height':'1020',
-                'async':true,
-                'host':'wufoo.com',
-                'header':'hide',
-                'ssl':true};
-                s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-                s.onload = s.onreadystatechange = function() {
-                var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-                try { zyzejks0hhujhd = new WufooForm();zyzejks0hhujhd.initialize(options);zyzejks0hhujhd.display(); } catch (e) {}};
-                var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-                })(document, 'script');</script>
             </section> 
+            <div id="gmap">
+               <iframe width="100%" height="500px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=12+rue+eglise+25290+ePEUGNEY&key=AIzaSyCchKc4ZFiFAqdC8SaMgc3MYJg6kUZRUf0&zoom=6"></iframe> 
+            </div>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script type="text/javascript">var zyzejks0hhujhd;(function(d, t) {
+                    var s = d.createElement(t), options = {
+                    'userName':'jcbshm',
+                    'formHash':'zyzejks0hhujhd',
+                    'autoResize':true,
+                    'height':'1020',
+                    'async':true,
+                    'host':'wufoo.com',
+                    'header':'hide',
+                    'ssl':true};
+                    s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+                    s.onload = s.onreadystatechange = function() {
+                    var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                    try { zyzejks0hhujhd = new WufooForm();zyzejks0hhujhd.initialize(options);zyzejks0hhujhd.display(); } catch (e) {}};
+                    var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                    })(document, 'script');</script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
         <script>
@@ -475,6 +524,6 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        </script> -->
     </body>
 </html>
