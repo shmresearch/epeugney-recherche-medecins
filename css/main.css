@@ -147,6 +147,10 @@ img {
     width: 100%;
 }
 
+br {
+    margin-bottom: 0.7em;
+}
+
 .left {
     float: left;
 }
@@ -275,9 +279,9 @@ ul.check-bullet-ul > li {
 .green-box {
     padding: 1em;
     background-color: rgba(108, 190, 69, 0.9);
-    font: 3em/0.8 "proxima-nova", "Helvetica Neue", Helvetica, "Arial", sans-serif;
+    font: 2em/0.8 "proxima-nova", "Helvetica Neue", Helvetica, "Arial", sans-serif;
     color: #fff;
-    width: 10em;
+    width: 13em;
     position: absolute;
     margin: -1em 0 0 -1em;
     line-height: 1em;
